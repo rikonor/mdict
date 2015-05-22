@@ -1,4 +1,4 @@
-### mdict
+### mdict [![Build Status](https://travis-ci.org/rikonor/mdict.svg?branch=master)](https://travis-ci.org/rikonor/mdict)
 
 mdict is a utility for robustly **retrieving** / **storing** values in nested python dicts.
 
