@@ -42,3 +42,7 @@ def mset(m_dict, keys, value, delimiter=':'):
             else:
                 val[key] = {}
                 val = val[key]
+
+class MDict(dict):
+    get = mget
+    set = mset

@@ -52,6 +52,13 @@ from mdict import *
 
 for user in users:
     print mget(user, 'settings:subscribed', False)
+
+# You can also use MDict to get the old dict syntax
+from mdict import MDict
+a = {'a': {'b': 1}}
+a = MDict(a)
+a.get('a:b')
+
 ```
 
 ##### * This tool was inspired by  [SaltStack](http://saltstack.com/)
