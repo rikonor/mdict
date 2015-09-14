@@ -35,10 +35,15 @@ def mset(m_dict, keys, value, delimiter=':'):
     keys = keys.split(delimiter)
     for i, key in enumerate(keys):
         try:
-            val = val[key]
+            if i == len(keys) - 1:
+                val[key] = value
+                return
+            else:
+                val = val[key]
         except KeyError:
             if i == len(keys) - 1:
                 val[key] = value
+                return
             else:
                 val[key] = {}
                 val = val[key]
